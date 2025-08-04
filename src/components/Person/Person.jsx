@@ -3,11 +3,11 @@ import './Person.css';
 export const Person = ({ person }) => {
   let married = <p className="Person__partner">I am not married</p>;
 
-  if (person.isMarried === true && person.sex === 'm') {
+  if (person.isMarried && person.sex === 'm') {
     married = (
       <p className="Person__partner">{person.partnerName} is my wife</p>
     );
-  } else if (person.isMarried === true && person.sex === 'f') {
+  } else if (person.isMarried && person.sex === 'f') {
     married = (
       <p className="Person__partner">{person.partnerName} is my husband</p>
     );
