@@ -1,7 +1,6 @@
-import './Person.css';
+import './Person.scss';
 
 export const Person = ({ person }) => {
-
   return (
     <section className="Person">
       <h2 className="Person__name">My name is {person.name}</h2>
